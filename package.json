@@ -44,7 +44,7 @@
     "cracks": "^3.1.2",
     "enzyme": "^2.7.1",
     "gsap": "^1.19.1",
-    "next": "2",
+    "next": "2.0.0-beta.32",
     "now": "^4.3.0",
     "npm-run-all": "^4.0.1",
     "progress-bar-webpack-plugin": "^1.9.3",
