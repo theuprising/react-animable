@@ -11,7 +11,7 @@ const Animable = GSAP(
     }
     makeTimeline (props) {
       const _makeTimeline = (props && props.makeTimeline) || this.props.makeTimeline
-      debug('making timleine', props, this.props)
+      debug('making timleine', {nextProps: props, props: this.props})
       return (utils) => {
         return _makeTimeline(utils.target)
       }
