@@ -15,7 +15,7 @@
     "build:module": "babel -d es src",
     "demo": "next",
     "now-start": "next start",
-    "postpublish": "now demo/ -t $NOW_TOKEN",
+    "postpublish": "now -t $NOW_TOKEN",
     "pretest": "yarn build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "ava",
