@@ -53,7 +53,6 @@
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "semantic-release": "^6.3.2",
-    "serve": "^3.2.10",
     "webpack": "^2.2.1"
   },
   "author": "Andrew J. Monks <a@monks.co>",
