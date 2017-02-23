@@ -2,14 +2,14 @@ import React from 'react'
 import { test } from 'ava'
 import { shallow } from 'enzyme'
 
-import __COMPONENT_NAME from '../'
+import ReactAnimable from '../'
 
-test('__COMPONENT_NAME renders without crashing', t => {
-  t.notThrows(() => shallow(<__COMPONENT_NAME />))
+test('ReactAnimable renders without crashing', t => {
+  t.notThrows(() => shallow(<ReactAnimable />))
 })
 
-test('__COMPONENT_NAME accepts className', t => {
-  const c = shallow(<__COMPONENT_NAME className='__PACKAGE_NAME' />)
-  t.true(c.hasClass('__PACKAGE_NAME'))
+test('ReactAnimable accepts className', t => {
+  const c = shallow(<ReactAnimable className='react-animable' />)
+  t.true(c.hasClass('react-animable'))
 })
 
