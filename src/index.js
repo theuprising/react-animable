@@ -23,9 +23,11 @@ const Animable = GSAP(
       )
     }
     componentWillReceiveProps (nextProps) {
-      debug('receiving props')
+      debug('receiving props', nextProps)
       if (nextProps.makeTimeline !== this.props.nextTimeline) {
-        this.makeTimeline(nextProps)
+        this.animationController = this.addAnimation(
+          this.makeTimeline(nextProps)
+        )
       }
     }
     render () {
