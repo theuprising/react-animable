@@ -1,6 +1,6 @@
 {
   "name": "react-animable",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "main": "umd/react-animable.js",
   "module": "es/react-animable.js",
   "files": [
@@ -43,6 +43,7 @@
     "babel-runtime": "^6.22.0",
     "cracks": "^3.1.2",
     "enzyme": "^2.7.1",
+    "gsap": "^1.19.1",
     "next": "2",
     "now": "^4.3.0",
     "npm-run-all": "^4.0.1",
@@ -65,5 +66,9 @@
     "require": [
       "babel-register"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theuprising/react-animable.git"
   }
 }
