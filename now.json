@@ -1,3 +1,6 @@
 {
-  "alias": "react-animable"
+  "alias": "react-animable",
+  "files": [
+    "src", "pages", "umd", "es"
+  ]
 }
