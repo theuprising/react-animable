@@ -36,7 +36,11 @@ const Animable = GSAP(
       debug('render')
       const {children, id, className, style} = this.props
       return (
-        <div id={id} className={className} style={clone(style)}>{children}</div>
+        <div id={id} className={className}
+          style={(style && clone(style)) || undefined}
+        >
+          {children}
+        </div>
       )
     }
   }
