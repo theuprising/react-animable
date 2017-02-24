@@ -2,6 +2,8 @@ const debug = require('debug')('react-animable')
 import React from 'react'
 import GSAP from 'react-gsap-enhancer'
 
+const clone = v => JSON.parse(JSON.stringify(v))
+
 const Animable = GSAP(
   class Animable extends React.Component {
     constructor (props) {
@@ -34,7 +36,7 @@ const Animable = GSAP(
       debug('render')
       const {children, id, className, style} = this.props
       return (
-        <div id={id} className={className} style={style}>{children}</div>
+        <div id={id} className={className} style={clone(style)}>{children}</div>
       )
     }
   }
