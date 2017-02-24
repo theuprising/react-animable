@@ -32,9 +32,9 @@ const Animable = GSAP(
     }
     render () {
       debug('render')
-      const {children, id, className} = this.props
+      const {children, id, className, style} = this.props
       return (
-        <div id={id} className={className}>{children}</div>
+        <div id={id} className={className} style={style}>{children}</div>
       )
     }
   }
@@ -43,7 +43,8 @@ Animable.propTypes = {
   makeTimeline: React.PropTypes.func.isRequired,
   children: React.PropTypes.node.isRequired,
   className: React.PropTypes.string,
-  id: React.PropTypes.string
+  id: React.PropTypes.string,
+  style: React.PropTypes.any
 }
 
 export default Animable
